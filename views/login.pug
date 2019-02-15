@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  if !user
+    a(href="/auth/github") GitHubでログイン
+    a(href="/auth/facebook") facebookでログイン
